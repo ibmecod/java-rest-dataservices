@@ -6,12 +6,21 @@
     <property name="debuglevel" value="source,lines,vars"/>
     <property name="target" value="1.7"/>
     <property name="source" value="1.7"/>
-    <condition property="ARCHIVE_DIR" value="${env.ARCHIVE_DIR}" else=".">
+    <condition property="ARCHIVE_DIR" value="${env.ARCHIVE_DIR}" else="./output/">
         <isset property="env.ARCHIVE_DIR" />
     </condition>
 	<property name="warname" value= "JavaHelloWorldApp.war"/>
     <path id="classpathDir">
         <pathelement location="bin"/>
+    	<pathelement location="WebContent/WEB-INF/lib/java-json.jar"/>
+    	<pathelement location="WebContent/WEB-INF/lib/cf-java-app-tracker-client-0.1.0.jar"/>
+    	<pathelement location="WebContent/WEB-INF/lib/commons-codec-1.10.jar"/>
+    	<pathelement location="WebContent/WEB-INF/lib/cloudant-client-1.0.1.jar"/>
+    	<pathelement location="WebContent/WEB-INF/lib/commons-dbutils-1.6.jar"/>
+    	<pathelement location="WebContent/WEB-INF/lib/db2jcc4.jar"/>
+    	<pathelement location="WebContent/WEB-INF/lib/gson-2.3.1.jar"/>
+    	<pathelement location="WebContent/WEB-INF/lib/httpclient-4.5.1.jar"/>
+    	<pathelement location="WebContent/WEB-INF/lib/httpcore-4.4.4.jar"/>
         <pathelement location="dep-jar/com.ibm.ws.javaee.jaxrs.1.1_1.0.1.jar"/>
     </path>
     <target name="init">
