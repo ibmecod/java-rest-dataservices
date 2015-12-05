@@ -4,8 +4,9 @@ applications:
   memory: 512M
   instances: 1
   domain: mybluemix.net
-  name: ecod-restclient
-  host: ecod-restclient
+  name: javaplay-rest-dataservices
+  host: javaplay-rest-dataservices
   disk_quota: 1024M
   services:
   - SQL Database - ecod
+  - Cloudant NoSQL DB - ecod
