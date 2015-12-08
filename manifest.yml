@@ -6,7 +6,6 @@ declared-services:
   sample-ecod-restclient-CloudantNoSQLDB:
     label: cloudantNoSQLDB
     plan: Shared
-        
 applications:
 - path: JavaHelloWorldApp.war
   memory: 512M
@@ -16,5 +15,5 @@ applications:
   host: javaplay-rest-dataservices
   disk_quota: 1024M
   services:
-  - sample-ecod-restclient-SQLDB #This services must match the name defined up in declared-services
-  - sample-ecod-restclient-CloudantNoSQLDB #This services must match the name defined up in declared-services
+  - SQL Database - ecod
+  - Cloudant NoSQL DB - ecod
