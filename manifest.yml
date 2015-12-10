@@ -7,7 +7,7 @@ declared-services:
     label: cloudantNoSQLDB
     plan: Shared
 applications:
-- path: JavaHelloWorldApp.war
+- path: javaplay-rest-dataservices.war
   memory: 512M
   instances: 1
   domain: mybluemix.net
